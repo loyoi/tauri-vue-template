@@ -1,0 +1,99 @@
+/* @reference "tailwindcss"; */
+@import "tailwindcss";
+
+@utility f-ic {
+  display: flex;
+  align-items: center;
+}
+@utility f-jc {
+  display: flex;
+  justify-content: center;
+}
+@utility f-cc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@utility bg-1 {
+  background-color: var(--color-bg-1);
+}
+@utility bg-2 {
+  background-color: var(--color-bg-2);
+}
+@utility bg-3 {
+  background-color: var(--color-bg-3);
+}
+@utility bg-4 {
+  background-color: var(--color-bg-4);
+}
+@utility bg-5 {
+  background-color: var(--color-bg-5);
+}
+
+@utility bd {
+  border: 1px solid var(--color-border-1);
+}
+@utility bd-2 {
+  border: 1px solid var(--color-border-2);
+}
+@utility bd-3 {
+  border: 1px solid var(--color-border-3);
+}
+@utility bd-4 {
+  border: 1px solid var(--color-border-4);
+}
+
+
+@utility rd {
+  border-radius: 4px;
+}
+
+
+* {
+  overflow: hidden;
+  user-select: none;
+  cursor: default;
+}
+
+/* 单独设置 margin/padding 重置（而非用 *） */
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-bg-1);
+  color: var(--color-text-2);
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  box-shadow: inset 0 0 4px #3e3e3e;
+  background: #eaeaea;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 4px #232323;
+  border-radius: 5px;
+  background: #232323;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2d8ceb;
+  /* 鼠标移动到滚动条上时的颜色  rgd(60, 126, 255)*/
+}
